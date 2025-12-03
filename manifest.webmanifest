@@ -1,0 +1,22 @@
+{
+  "name": "DeutschHero – تعلم الألمانية من الصفر",
+  "short_name": "DeutschHero",
+  "description": "تعلم الألمانية خطوة بخطوة بطريقة ممتعة وتفاعلية.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/icon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

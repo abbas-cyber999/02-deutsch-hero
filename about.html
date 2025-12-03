@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="موقع Deutsch Hero لتعلم اللغة الألمانية من الصفر حتى الاحتراف بطريقة سهلة، ممتعة، وتفاعلية.">
+  <meta name="keywords" content="تعلم الألمانية, تعلم اللغة الألمانية, مفردات ألمانية, قواعد ألمانية, A1, A2, B1, Deutsch lernen, German learning">
+
+  <meta property="og:title" content="Deutsch Hero – تعلم الألمانية من الصفر">
+  <meta property="og:description" content="تعلم الألمانية بطريقة سهلة وسريعة من خلال دروس تفاعلية ومحتوى بسيط للمبتدئين.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://deutsch-hero.netlify.app/icon.png">
+  <meta property="og:url" content="https://deutsch-hero.netlify.app">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – Deutsch Hero</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="landing-title rainbow-title" data-i18n="title_main"></h1>
+
+  <nav class="main-nav">
+    <a href="index.html"   class="nav-link" data-i18n="menu_home"></a>
+    <a href="about.html"   class="nav-link active" data-i18n="menu_about"></a>
+    <a href="contact.html" class="nav-link" data-i18n="menu_contact"></a>
+    <a href="privacy.html" class="nav-link" data-i18n="menu_privacy"></a>
+    <a href="terms.html"   class="nav-link" data-i18n="menu_terms"></a>
+  </nav>
+
+  <div class="app-shell">
+    <main class="app-main">
+      <section class="card">
+        <h2 class="card-title" data-i18n="about_title"></h2>
+        <p class="card-subtitle" data-i18n="about_intro"></p>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title" data-i18n="about_section_mission_title"></h2>
+        <p data-i18n="about_section_mission_body"></p>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title" data-i18n="about_section_how_title"></h2>
+        <p data-i18n="about_section_how_body"></p>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span class="app-footer-text" data-i18n="footer_text"></span>
+    </footer>
+  </div>
+
+  <script src="main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof loadPrefs === 'function') loadPrefs();
+      if (typeof applyUiLanguage === 'function') applyUiLanguage();
+    });
+  </script>
+
+</body>
+</html>

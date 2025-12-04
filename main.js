@@ -206,7 +206,17 @@ const UI_STRINGS = {
     backToLanding: 'العودة للصفحة الرئيسية',
     backToGrammarList: '⬅ رجوع إلى قائمة القواعد',
     backToLessonsList: '⬅ رجوع إلى قائمة الدروس',
+        noLessonContent: 'لا توجد محتويات لهذا الدرس بعد.',
+
     lessonListIntro: 'ابدأ من أول درس في هذا المستوى، وكل خطوة تقرّبك من الطلاقة.',
+        writing_no_content: 'لا يوجد تمرين كتابة مضاف لهذا الدرس بعد. ✍️',
+    writing_label_input: '✍️ اكتب إجابتك هنا:',
+    writing_placeholder: 'اكتب جملك بالألمانية هنا...',
+    writing_check_btn: 'تحقّق من كتابتي ✅',
+    writing_empty_warning: 'اكتب شيئًا أولًا ثم اضغط على زر التحقق 🙂',
+    writing_thanks: 'شكرًا على كتابتك! قارن إجابتك مع النموذج وحاول تحسينها في المرة القادمة 💪',
+    writing_example_title: '💡 نموذج إجابة ممكن:',
+
         // نصوص اختبار تحديد المستوى
     placementTitle: (cur, total) => `اختبار تحديد المستوى – سؤال ${cur} من ${total}`,
     placementSubtitle:
@@ -273,7 +283,17 @@ share_this_lesson: "🔗 شارك هذا الدرس",
     backToLanding: 'Back to home',
     backToGrammarList: '⬅ Back to grammar list',
     backToLessonsList: '⬅ Back to lesson list',
+        noLessonContent: 'There is no content for this lesson yet.',
+
     lessonListIntro: 'Start from the first lesson. Each small step brings you closer to fluency.',
+        writing_no_content: 'There is no writing exercise for this lesson yet. ✍️',
+    writing_label_input: '✍️ Write your answer here:',
+    writing_placeholder: 'Write your sentences in German here...',
+    writing_check_btn: 'Check my writing ✅',
+    writing_empty_warning: 'Write something first, then press the check button 🙂',
+    writing_thanks: 'Thank you for your writing! Compare your answer with the model and try to improve it next time 💪',
+    writing_example_title: '💡 Example answer:',
+
         // Placement test texts
     placementTitle: (cur, total) => `Placement test – question ${cur} of ${total}`,
     placementSubtitle:
@@ -346,7 +366,17 @@ share_this_lesson: "🔗 Share this lesson",
     backToLanding: 'Назад на главную',
     backToGrammarList: '⬅ Назад к списку грамматики',
     backToLessonsList: '⬅ Назад к списку уроков',
+        noLessonContent: 'Для этого урока пока нет содержания.',
+
     lessonListIntro: 'Начните с первого урока. Каждый шаг приближает вас к свободной речи.',
+        writing_no_content: 'Для этого урока пока нет письменного задания. ✍️',
+    writing_label_input: '✍️ Напиши свой ответ здесь:',
+    writing_placeholder: 'Напиши свои предложения на немецком здесь...',
+    writing_check_btn: 'Проверить мой текст ✅',
+    writing_empty_warning: 'Сначала напиши что-нибудь, затем нажми кнопку проверки 🙂',
+    writing_thanks: 'Спасибо за твой текст! Сравни свой ответ с примером и попробуй улучшиться в следующий раз 💪',
+    writing_example_title: '💡 Возможный пример ответа:',
+
     grammarListIntro: 'Каждая тема грамматики — это маленький интерактивный урок.',
     levelLabel: (lvl) => (lvl ? `Уровень ${lvl}` : 'Выберите уровень'),
     grammarLevelLabel: (lvl) => `Грамматика ${lvl}`,
@@ -414,7 +444,17 @@ coreVerbsButton: '📘 جدول فعل‌های پایه‌ای',
     backToLanding: 'بازگشت به صفحه اصلی',
     backToGrammarList: '⬅ بازگشت به فهرست گرامر',
     backToLessonsList: '⬅ بازگشت به فهرست درس‌ها',
+        noLessonContent: 'هنوز محتوایی برای این درس اضافه نشده است.',
+
     lessonListIntro: 'از اولین درس شروع کنید. هر قدم شما را به تسلط نزدیک‌تر می‌کند.',
+        writing_no_content: 'هنوز تمرین نوشتاری برای این درس اضافه نشده است. ✍️',
+    writing_label_input: '✍️ پاسخ خود را اینجا بنویس:',
+    writing_placeholder: 'جمله‌های آلمانی خود را اینجا بنویس...',
+    writing_check_btn: 'تصحیح نوشته من ✅',
+    writing_empty_warning: 'اول چیزی بنویس، بعد دکمهٔ بررسی را بزن 🙂',
+    writing_thanks: 'ممنون از نوشتۀ تو! جوابت را با نمونه مقایسه کن و دفعهٔ بعد بهترش کن 💪',
+    writing_example_title: '💡 یک نمونهٔ ممکن از پاسخ:',
+
     grammarListIntro: 'هر مبحث گرامر یک درس تعاملی کوچک است.',
     levelLabel: (lvl) => (lvl ? `سطح ${lvl}` : 'سطح را انتخاب کنید'),
     grammarLevelLabel: (lvl) => `گرامر ${lvl}`,
@@ -489,12 +529,15 @@ share_this_lesson: "🔗 این درس را به اشتراک بگذار",
       `د کچې ${lvl} او ژبې ${code} لپاره درس ونه موندل شو.`,
     noGrammarForLevel: (lvl, file) =>
       `د کچې ${lvl} لپاره ګرامر نشته. فایل وګوره:\n${file}`,
-        auth_badge_step: "🚀 لومړی ګام: خپل نوم وټاکه",
-    auth_title: "خپل نوم یا هر مستعار نوم ولیکه څو ستا پرمختګ وساتل شي",
-    auth_subtitle: "دا نوم به د دې لپاره کارېږي چې د درسونو پرمختګ دې وساتل شي. وروسته کولای شې په همدې نوم بېرته راشې او له هماغه ځایه دوام ورکړې.",
-    auth_placeholder: "لکه: AbbasHero، Noor یا SuperStar",
-    auth_btn_register: "پیل او زما پرمختګ خوندي کړه ✅",
-share_this_lesson: "🔗 دا لوست شریک کړه",
+
+    auth_badge_step: '🚀 لومړی ګام: خپل نوم وټاکه',
+    auth_title: 'خپل نوم یا هر مستعار نوم ولیکه څو ستا پرمختګ وساتل شي',
+    auth_subtitle:
+      'دا نوم به د دې لپاره کارېږي چې د درسونو پرمخ تګ وساتل شي. وروسته بیا کولای شې په همدې نوم بېرته راشې او له هماغه ځایه دوام ورکړې.',
+    auth_placeholder: 'لکه: AbbasHero، Noor یا SuperStar',
+    auth_btn_register: 'پیل او زما پرمختګ خوندي کړه ✅',
+
+    share_this_lesson: '🔗 دا لوست شریک کړه',
 
     stepsTitles: {
       scene: '🪄 صحنه',
@@ -506,12 +549,14 @@ share_this_lesson: "🔗 دا لوست شریک کړه",
       quiz: '🎭 تمرین (سم ځواب وټاکه)',
       writing: '✍️ د لیکلو تمرین'
     },
+
     prev: '⬅ شاته',
     next: 'بل ➜',
     toList: 'بیرته لیست ته',
     finishLesson: '✅ درس ختم شو',
-        lessonDoneTitle: 'آفرین! دا درس دې پای ته ورساوه ✅',
+    lessonDoneTitle: 'آفرین! دا درس دې پای ته ورساوه ✅',
     lessonDoneBody: 'د درسونو لیست ته د ستنېدو لپاره پر هر ځای کېکاږه.',
+
     examButtonLabel: (lvl) => `د ${lvl} کچې ازموینه`,
     levelLockedTitle: 'کچه تړل شوې ده 🔒',
     levelLockedBody: (required, blocked) =>
@@ -529,13 +574,26 @@ share_this_lesson: "🔗 دا لوست شریک کړه",
     levelChip: (lvl) => `کچه: ${lvl}`,
     completed: '✅ بشپړ شو',
     grammarCompleted: '✅ تمام شو',
+
+    // 📌 ټکي د کویز لپاره
     quizCorrect: 'سم ځواب! 🎉',
     quizWrong: 'غلط دی، بیا هڅه وکړه. ❌',
     quizHintDefault: 'یو څه نور فکر وکړه.',
     showHint: 'اشاره 💡',
     showAnswer: 'ځواب ښکاره کړه ✅',
-    audioLabel: '🔊'
+    audioLabel: '🔊',
+
+    // 📌 ټکي د لیکلو تمرین لپاره
+    writing_no_content: 'تر د دې لوست لپاره لا د لیکلو تمرین نه دی زیات شوی. ✍️',
+    writing_label_input: '✍️ خپله ځواب همدلته ولیکه:',
+    writing_placeholder: 'خپل جرمني جملې دلته ولیکه...',
+    writing_check_btn: 'زما لیکنه وڅېړه ✅',
+    writing_empty_warning: 'لومړی څه ولیکه، بیا د څېړلو تڼۍ کېکاږه 🙂',
+    writing_thanks:
+      'ستاسو د لیکنې لپاره مننه! خپل ځواب له بېلګې سره پرتله کړه او بل ځل یې لا ښه کړه 💪',
+    writing_example_title: '💡 د یوې ممکنه ځواب بېلګه:'
   },
+
   uk: {
     appName: 'Німецька з нуля',
     appTagline: 'Проста та цікава платформа для вивчення німецької мови',
@@ -548,7 +606,17 @@ share_this_lesson: "🔗 دا لوست شریک کړه",
     backToLanding: 'Назад на головну',
     backToGrammarList: '⬅ Назад до списку граматики',
     backToLessonsList: '⬅ Назад до списку уроків',
+        noLessonContent: 'Для цього уроку ще немає матеріалу.',
+
     lessonListIntro: 'Почни з першого уроку. Кожен крок наближає тебе до вільної мови.',
+        writing_no_content: 'Для цього уроку ще немає письмової вправи. ✍️',
+    writing_label_input: '✍️ Напиши свою відповідь тут:',
+    writing_placeholder: 'Напиши свої речення німецькою тут...',
+    writing_check_btn: 'Перевірити моє письмо ✅',
+    writing_empty_warning: 'Спочатку напиши щось, а потім натисни кнопку перевірки 🙂',
+    writing_thanks: 'Дякуємо за твою відповідь! Порівняй її з прикладом і спробуй покращитися наступного разу 💪',
+    writing_example_title: '💡 Можливий зразок відповіді:',
+
     grammarListIntro: 'Кожна тема граматики — це невеликий інтерактивний урок.',
     levelLabel: (lvl) => (lvl ? `Рівень ${lvl}` : 'Оберіть рівень'),
     grammarLevelLabel: (lvl) => `Граматика ${lvl}`,
@@ -615,7 +683,17 @@ share_this_lesson: "🔗 Поділитися цим уроком",
     backToLanding: 'Ana sayfaya geri dön',
     backToGrammarList: '⬅ Gramer listesine geri dön',
     backToLessonsList: '⬅ Ders listesine geri dön',
+        noLessonContent: 'Bu ders için henüz içerik eklenmedi.',
+
     lessonListIntro: 'Bu seviyenin ilk dersinden başla, her adım seni akıcılığa yaklaştırır.',
+        writing_no_content: 'Bu ders için henüz yazma alıştırması eklenmedi. ✍️',
+    writing_label_input: '✍️ Cevabını buraya yaz:',
+    writing_placeholder: 'Cümlelerini burada Almanca olarak yaz...',
+    writing_check_btn: 'Yazımı kontrol et ✅',
+    writing_empty_warning: 'Önce bir şey yaz, sonra kontrol düğmesine bas 🙂',
+    writing_thanks: 'Yazın için teşekkürler! Cevabını örnekle karşılaştır ve bir dahaki sefere daha iyi yazmaya çalış 💪',
+    writing_example_title: '💡 Örnek bir cevap:',
+
     grammarListIntro: 'Her gramer konusu küçük bir interaktif derstir.',
     levelLabel: (lvl) => (lvl ? `Seviye ${lvl}` : 'Seviyeyi seç'),
     grammarLevelLabel: (lvl) => `Gramer ${lvl}`,
@@ -862,6 +940,16 @@ const UI_TRANSLATIONS = {
     fa: "تماس با ما",
     af: "له موږ سره اړیکه ونیسئ",
   },
+    logout_btn: {
+    ar: "خروج",
+    en: "Log out",
+    uk: "Вийти",
+    ru: "Выйти",
+    tr: "Çıkış",
+    fa: "خروج",
+    af: "وتلل",
+  },
+
   menu_privacy: {
     // Privacy Policy
     ar: "سياسة الخصوصية",
@@ -1627,13 +1715,13 @@ function renderExamQuestion() {
   const levelKey = currentExam.level || currentLevelKey || '';
   const examTitle =
     typeof strings.examButtonLabel === 'function'
-      ? strings.examButtonLabel(levelKey) // مثال بالتركي: "A2 seviye testi"
+      ? strings.examButtonLabel(levelKey)
       : (currentExam.title_ar || `امتحان مستوى ${levelKey}`);
 
   // 🔹 الجملة تحت العنوان (رقم السؤال من عدد الأسئلة) حسب اللغة
   const subtitle =
     typeof strings.stepIndicator === 'function'
-      ? strings.stepIndicator(qNumber, total) // مثلاً: "Ekran 2 / 10"
+      ? strings.stepIndicator(qNumber, total)
       : `سؤال ${qNumber} من ${total}`;
 
   // 🔹 نصوص صح/خطأ متعددة اللغات
@@ -1643,7 +1731,7 @@ function renderExamQuestion() {
     'إجابة خاطئة، راجع هذا الموضوع في الدروس ثم جرّب مرة أخرى.';
 
   appEl.innerHTML = `
-    <div class="card view-fade-in">
+    <div class="card view-fade-in quiz-card exam-card">
       <h2 class="card-title">
         ${examTitle}
       </h2>
@@ -1691,6 +1779,7 @@ function renderExamQuestion() {
     </div>
   `;
 
+  const cardEl = document.querySelector('.exam-card');
   const btns = document.querySelectorAll('.quiz-option-btn');
   const feedbackEl = document.getElementById('exam-feedback');
   const cancelBtn = document.getElementById('exam-cancel');
@@ -1700,23 +1789,69 @@ function renderExamQuestion() {
       const idx = Number(btn.getAttribute('data-index'));
       btns.forEach((b) => (b.disabled = true));
 
+      // ننضف أي حالة سابقة
+      if (feedbackEl) {
+        feedbackEl.innerHTML = '';
+        feedbackEl.className = 'quiz-feedback';
+      }
+      if (cardEl) {
+        cardEl.classList.remove('quiz-correct-flash', 'quiz-wrong-flash');
+      }
+
       const correctIndex = q.answer;
+
       if (idx === correctIndex) {
+        // ✅ اختيار صحيح
         btn.classList.add('correct');
-        if (feedbackEl) feedbackEl.textContent = correctMsg;
+
+        if (feedbackEl) {
+          feedbackEl.innerHTML = `
+            <div class="feedback-chip feedback-chip-correct">
+              <span class="feedback-icon">✅</span>
+              <span>${correctMsg}</span>
+            </div>
+          `;
+          feedbackEl.classList.add('correct');
+        }
+
+        if (cardEl) {
+          cardEl.classList.add('quiz-correct-flash');
+        }
+
         currentExamCorrect += 1;
         triggerConfetti();
       } else {
+        // ❌ اختيار خاطئ
         btn.classList.add('wrong');
+
+        // إظهار الجواب الصحيح بلطف
+        const correctBtn = Array.from(btns).find(
+          (b) => Number(b.getAttribute('data-index')) === correctIndex
+        );
+        if (correctBtn) {
+          correctBtn.classList.add('correct');
+        }
+
         if (feedbackEl) {
-          feedbackEl.textContent = wrongMsg;
+          feedbackEl.innerHTML = `
+            <div class="feedback-chip feedback-chip-wrong">
+              <span class="feedback-icon">❌</span>
+              <span>${wrongMsg}</span>
+            </div>
+          `;
+          feedbackEl.classList.add('wrong');
+        }
+
+        if (cardEl) {
+          cardEl.classList.add('quiz-wrong-flash');
         }
       }
 
+      // ننتقل للسؤال اللي بعده بعد لحظة قصيرة
       setTimeout(() => {
         currentExamIndex += 1;
         renderExamQuestion();
-      }, 900);
+      }, 1100);
     });
   });
 
@@ -1726,6 +1861,7 @@ function renderExamQuestion() {
     });
   }
 }
+
 
 
 function finishLevelExam() {
@@ -2280,6 +2416,18 @@ function renderGrammarLevelView() {
     const lessonEl = document.createElement('div');
     lessonEl.className = 'lesson-card';
 
+    // 🎯 إبراز الدرس المنتهي
+if (isCompleted) {
+  lessonEl.classList.add('completed');
+}
+
+// 🎯 إبراز الدرس الحالي (آخر درس فتحه المستخدم)
+const lastOpened = localStorage.getItem("lastOpenedLesson");
+if (lastOpened && lastOpened === lesson._key) {
+  lessonEl.classList.add('current');
+}
+
+
     let statusHtml = '';
     if (isCompleted) {
       statusHtml = `<span class="lesson-badge-completed">${strings.grammarCompleted}</span>`;
@@ -2304,6 +2452,8 @@ function renderGrammarLevelView() {
       currentMode = 'grammar';
       currentLessonId = lesson._key;
       currentLessonStep = 0;
+      localStorage.setItem("lastOpenedLesson", lesson._key);
+
       renderLessonPage(lesson);
     });
 
@@ -2651,15 +2801,15 @@ function renderStepContent(lesson, stepKey, strings) {
   }
 
 
-  // 8) تمرين الكتابة
+// 8) تمرين الكتابة
   if (stepKey === 'writing') {
     const we = lesson.writingExercise;
     if (!we) {
-      return `<p class="expl-body-text">لا يوجد تمرين كتابة مضاف لهذا الدرس بعد. ✍️</p>`;
+      return `<p class="expl-body-text">${strings.writing_no_content}</p>`;
     }
 
     const instrDe = replaceName(we.instruction_de || '');
-    const instrAr = replaceName(we.instruction_ar || '');
+    const instrNative = replaceName(we.instruction_ar || '');
     const example = replaceName(we.exampleAnswer || '');
 
     return `
@@ -2670,30 +2820,32 @@ function renderStepContent(lesson, stepKey, strings) {
         </p>
         <p class="scene-text">
           <strong>📌 الشرح بالعربية:</strong><br>
-          ${instrAr}
+          ${instrNative}
         </p>
 
         <label for="writing-input" class="label" style="margin-top:0.75rem; display:block;">
-          ✍️ اكتب إجابتك هنا:
+          ${strings.writing_label_input}
         </label>
         <textarea
           id="writing-input"
           class="textarea"
           rows="5"
           style="width:100%; margin-top:0.25rem;"
-          placeholder="اكتب جملك بالألمانية هنا..."
+          placeholder="${strings.writing_placeholder}"
         ></textarea>
 
         <div style="margin-top:0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
           <button id="check-writing" class="btn btn-primary btn-small">
-            تحقّق من كتابتي ✅
+            ${strings.writing_check_btn}
           </button>
         </div>
 
         <div id="writing-feedback" class="quiz-feedback" style="margin-top:0.75rem;"></div>
 
         <div id="writing-example" class="card" style="margin-top:0.75rem; display:none;">
-          <div class="section-heading" style="margin-bottom:0.4rem;">💡 نموذج إجابة ممكن:</div>
+          <div class="section-heading" style="margin-bottom:0.4rem;">
+            ${strings.writing_example_title}
+          </div>
           <p>${highlightGermanInText(example)}</p>
         </div>
       </div>
@@ -2703,6 +2855,7 @@ function renderStepContent(lesson, stepKey, strings) {
   // احتياط
   return `<p>لا توجد محتويات لهذه الخطوة بعد.</p>`;
 }
+
 
 // 🟢 فحص إجابات الكويز
 function setupQuizHandlers(lesson, strings) {
@@ -2839,7 +2992,6 @@ function setupQuizHandlers(lesson, strings) {
   }
 }
 
-// 🟢 تجهيز تمرين الكتابة
 function setupWritingHandlers(strings) {
   const btn = document.getElementById('check-writing');
   const input = document.getElementById('writing-input');
@@ -2850,14 +3002,18 @@ function setupWritingHandlers(strings) {
 
   btn.addEventListener('click', () => {
     const text = (input.value || '').trim();
+
     if (!text) {
-      feedbackEl.textContent = 'اكتب شيئًا أولًا ثم اضغط على زر التحقق 🙂';
+      feedbackEl.textContent =
+        strings.writing_empty_warning ||
+        'اكتب شيئًا أولًا ثم اضغط على زر التحقق 🙂';
       feedbackEl.className = 'quiz-feedback wrong';
       if (exampleBox) exampleBox.style.display = 'none';
       return;
     }
 
     feedbackEl.textContent =
+      strings.writing_thanks ||
       'شكرًا على كتابتك! قارن إجابتك مع النموذج وحاول تحسينها في المرة القادمة 💪';
     feedbackEl.className = 'quiz-feedback correct';
 
@@ -2866,6 +3022,7 @@ function setupWritingHandlers(strings) {
     }
   });
 }
+
 // 🟢 الرجوع إلى قائمة الدروس / القواعد بحسب الوضع الحالي
 function goBackToCurrentLevelView() {
   // لو كنت داخل درس قواعد
@@ -2901,7 +3058,7 @@ function renderLessonPage(lesson) {
   if (!stepsForThisLesson.length) {
     appEl.innerHTML = `
       <div class="card">
-        <h3>لا توجد محتويات لهذا الدرس بعد.</h3>
+       <h3>${strings.noLessonContent}</h3>
         <button class="btn btn-ghost" id="back-empty-lesson">${strings.backToLessonsList}</button>
       </div>
     `;

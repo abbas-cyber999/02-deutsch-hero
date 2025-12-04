@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <script data-goatcounter="https://deutschherolearn.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
   <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#0f172a">
 
@@ -128,27 +126,7 @@
 
   <!-- 🧱 هيكل التطبيق -->
   <div class="app-shell">
-    <!-- الهيدر -->
-    <header class="app-header">
-      <div class="logo">
-        <span class="logo-emoji">🇩🇪</span>
-        <span class="logo-text">Deutsch Hero</span>
-      </div>
-
-      <div class="header-right">
-        <!-- شارة المستوى -->
-        <span class="level-badge">
-          <span id="current-level-label">A0</span>
-        </span>
-
-        <!-- المستخدم الحالي + زر خروج -->
-        <span id="user-chip" class="user-chip" style="display:none;">
-          <span id="user-chip-name" class="user-chip-name">Gast</span>
-          <button id="user-logout-btn" class="user-logout-btn">
-            خروج
-          </button>
-        </span>
-      </div>
+   
       <header class="app-header">
   <div class="logo">
     <!-- شعار DeutschHero المتحرك -->
@@ -238,14 +216,17 @@
 
     <span id="user-chip" class="user-chip" style="display:none;">
       <span id="user-chip-name" class="user-chip-name">Gast</span>
-      <button id="user-logout-btn" class="user-logout-btn">
-        خروج
-      </button>
+      <button
+  id="user-logout-btn"
+  class="user-logout-btn"
+  data-i18n="logout_btn"
+>
+  خروج
+</button>
+
     </span>
   </div>
 </header>
-
-    </header>
     <!-- المحتوى الرئيسي -->
     <main class="app-main">
             <!-- صندوق اختيار الاسم / حساب واحد بسيط -->

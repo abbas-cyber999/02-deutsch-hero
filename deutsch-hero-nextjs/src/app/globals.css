@@ -43,3 +43,35 @@ a {
 .glass-panel {
   @apply rounded-2xl border border-slate-800/60 bg-slate-900/60 shadow-lg shadow-black/25 backdrop-blur;
 }
+
+@layer components {
+  /* Override legacy modal buttons so they match the new dark theme */
+  .lang-modal .lang-btn {
+    background: linear-gradient(145deg, rgba(15,23,42,0.95), rgba(15,23,42,0.9)) !important;
+    border: 1px solid rgba(251, 191, 36, 0.35) !important;
+    color: #e2e8f0 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 20px 50px -20px rgba(0,0,0,0.65), 0 0 0 1px rgba(15,23,42,0.6) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.9rem 1rem !important;
+    gap: 0.5rem !important;
+    transition: transform 120ms ease, box-shadow 150ms ease, border-color 150ms ease;
+  }
+
+  .lang-modal .lang-btn:hover {
+    transform: translateY(-2px);
+    border-color: rgba(251, 191, 36, 0.55);
+    box-shadow: 0 18px 45px -18px rgba(251, 191, 36, 0.4), 0 0 0 1px rgba(251, 191, 36, 0.4);
+  }
+
+  .lang-modal .lang-btn__flag {
+    font-size: 1.2rem !important;
+  }
+
+  .lang-modal .lang-btn__code {
+    font-weight: 700 !important;
+    color: #fcd34d !important;
+  }
+}

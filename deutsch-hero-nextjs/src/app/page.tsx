@@ -164,35 +164,35 @@ export default function Home() {
             <nav className="main-nav hidden items-center gap-2 rounded-full bg-slate-900/80 px-2 py-1 shadow-xl shadow-black/30 ring-1 ring-slate-800/70 md:flex">
               <Link
                 href="/"
-                className="nav-link rounded-full px-3 py-2 text-sm text-slate-200 hover:bg-slate-800/80 data-[active=true]:bg-slate-800/90"
+                className="nav-link nav-chip"
                 data-i18n="menu_home"
               >
                 Home
               </Link>
               <Link
                 href="/about.html"
-                className="nav-link rounded-full px-3 py-2 text-sm text-slate-200 hover:bg-slate-800/80"
+                className="nav-link nav-chip"
                 data-i18n="menu_about"
               >
                 Über uns
               </Link>
               <Link
                 href="/contact.html"
-                className="nav-link rounded-full px-3 py-2 text-sm text-slate-200 hover:bg-slate-800/80"
+                className="nav-link nav-chip"
                 data-i18n="menu_contact"
               >
                 Kontakt
               </Link>
               <Link
                 href="/privacy.html"
-                className="nav-link rounded-full px-3 py-2 text-sm text-slate-200 hover:bg-slate-800/80"
+                className="nav-link nav-chip"
                 data-i18n="menu_privacy"
               >
                 Datenschutz
               </Link>
               <Link
                 href="/terms.html"
-                className="nav-link rounded-full px-3 py-2 text-sm text-slate-200 hover:bg-slate-800/80"
+                className="nav-link nav-chip"
                 data-i18n="menu_terms"
               >
                 Nutzungsbedingungen
@@ -212,19 +212,19 @@ export default function Home() {
           </header>
 
           <div className="main-nav grid grid-cols-2 gap-2 rounded-xl bg-slate-900/60 p-3 shadow-lg shadow-black/30 ring-1 ring-slate-800/60 md:hidden">
-            <Link href="/" className="nav-link rounded-lg px-3 py-2 text-slate-200" data-i18n="menu_home">
+            <Link href="/" className="nav-link nav-chip" data-i18n="menu_home">
               Home
             </Link>
-            <Link href="/about.html" className="nav-link rounded-lg px-3 py-2 text-slate-200" data-i18n="menu_about">
-              Über
+            <Link href="/about.html" className="nav-link nav-chip" data-i18n="menu_about">
+              Über uns
             </Link>
-            <Link href="/contact.html" className="nav-link rounded-lg px-3 py-2 text-slate-200" data-i18n="menu_contact">
+            <Link href="/contact.html" className="nav-link nav-chip" data-i18n="menu_contact">
               Kontakt
             </Link>
-            <Link href="/privacy.html" className="nav-link rounded-lg px-3 py-2 text-slate-200" data-i18n="menu_privacy">
+            <Link href="/privacy.html" className="nav-link nav-chip" data-i18n="menu_privacy">
               Datenschutz
             </Link>
-            <Link href="/terms.html" className="nav-link rounded-lg px-3 py-2 text-slate-200" data-i18n="menu_terms">
+            <Link href="/terms.html" className="nav-link nav-chip" data-i18n="menu_terms">
               Nutzungsbedingungen
             </Link>
           </div>

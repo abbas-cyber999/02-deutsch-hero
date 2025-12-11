@@ -147,18 +147,21 @@ export default function Home() {
       <div className="relative overflow-hidden bg-slate-950 text-slate-50">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(250,204,21,0.15),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(59,130,246,0.12),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(15,23,42,0.9),transparent_45%)]" />
         <div className="container relative z-10 space-y-10 pb-16 pt-10 lg:pt-12">
-          <header className="flex flex-col gap-5 rounded-3xl border border-slate-800/60 bg-slate-900/70 p-4 shadow-lg shadow-black/30 ring-1 ring-amber-200/10 md:flex-row md:items-center md:justify-between">
+          <header className="hero-header flex flex-col gap-5 rounded-3xl border border-slate-800/60 bg-slate-900/80 p-4 shadow-xl shadow-black/35 ring-1 ring-amber-200/10 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-amber-300/30 bg-amber-400/10 text-lg font-semibold text-amber-100 shadow-glow">
                 DH
               </div>
               <div>
-                <p className="text-sm text-slate-200">DeutschHero</p>
-                <p className="text-xs text-slate-400">Jetzt mit frischer UI und schnellem Onboarding.</p>
+                <p className="flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-amber-200">
+                  <Sparkles className="h-3.5 w-3.5" /> Modern UI
+                </p>
+                <p className="text-sm text-slate-100">DeutschHero</p>
+                <p className="text-xs text-slate-400">Klare Navigation, schneller Einstieg, Postgres-ready.</p>
               </div>
             </div>
 
-            <nav className="main-nav hidden items-center gap-2 rounded-full bg-slate-900/70 px-2 py-1 shadow-xl shadow-black/30 ring-1 ring-slate-800/70 md:flex">
+            <nav className="main-nav hidden items-center gap-2 rounded-full bg-slate-900/80 px-2 py-1 shadow-xl shadow-black/30 ring-1 ring-slate-800/70 md:flex">
               <Link
                 href="/"
                 className="nav-link rounded-full px-3 py-2 text-sm text-slate-200 hover:bg-slate-800/80 data-[active=true]:bg-slate-800/90"
@@ -171,7 +174,7 @@ export default function Home() {
                 className="nav-link rounded-full px-3 py-2 text-sm text-slate-200 hover:bg-slate-800/80"
                 data-i18n="menu_about"
               >
-                Über
+                Über uns
               </Link>
               <Link
                 href="/contact.html"
@@ -392,56 +395,51 @@ export default function Home() {
             ))}
           </section>
 
-          <footer className="app-footer mt-10 grid gap-6 rounded-3xl border border-slate-800/70 bg-slate-900/80 p-8 text-slate-200 shadow-2xl shadow-black/30">
-            <div className="flex flex-col gap-2">
-              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-100 ring-1 ring-amber-200/30">
-                <Sparkles className="h-3.5 w-3.5" />
-                Crafted for fast onboarding
+          <footer className="app-footer hero-footer mt-10 grid gap-8 rounded-3xl border border-slate-800/70 bg-slate-900/90 p-8 text-slate-200 shadow-2xl shadow-black/30">
+            <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+              <div className="flex flex-col gap-3">
+                <div className="inline-flex w-fit items-center gap-2 rounded-full bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-100 ring-1 ring-amber-200/30">
+                  <Sparkles className="h-3.5 w-3.5" />
+                  Modern Learning Stack
+                </div>
+                <h3 className="text-3xl font-semibold text-slate-50 leading-tight">Bereit für deinen nächsten Level?</h3>
+                <p className="max-w-2xl text-slate-300">
+                  Alle Inhalte bleiben offlinefähig, Fortschritt wird lokal und in Postgres gesichert. Wechsel jederzeit die Sprache oder starte neu.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <Button size="lg" className="shadow-glow" asChild>
+                    <Link href="#app">Lektion öffnen</Link>
+                  </Button>
+                  <Button id="reset-app-btn" className="reset-app-btn" type="button" variant="outline" data-i18n="reset_app_btn">
+                    App zurücksetzen
+                  </Button>
+                </div>
               </div>
-              <h3 className="text-2xl font-semibold text-slate-50">Bereit für deinen nächsten Level?</h3>
-              <p className="max-w-2xl text-slate-300">
-                Alle Inhalte bleiben offlinefähig, Fortschritt wird lokal und in Postgres gesichert. Wechsel jederzeit die Sprache oder starte neu.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Button size="lg" className="shadow-glow" asChild>
-                  <Link href="#app">Lektion öffnen</Link>
-                </Button>
-                <Button id="reset-app-btn" className="reset-app-btn" type="button" variant="outline" data-i18n="reset_app_btn">
-                  App zurücksetzen
-                </Button>
-              </div>
-            </div>
-
-            <div className="grid gap-4 text-sm text-slate-300 sm:grid-cols-3">
-              <div className="space-y-2">
-                <p className="text-slate-100">Produkt</p>
-                <Link href="/about.html" className="block hover:text-amber-200" data-i18n="menu_about">
-                  Über DeutschHero
-                </Link>
-                <Link href="/contact.html" className="block hover:text-amber-200" data-i18n="menu_contact">
-                  Kontakt
-                </Link>
-                <Link href="/" className="block hover:text-amber-200">
-                  Changelog
-                </Link>
-              </div>
-              <div className="space-y-2">
-                <p className="text-slate-100">Rechtliches</p>
-                <Link href="/privacy.html" className="block hover:text-amber-200" data-i18n="menu_privacy">
-                  Datenschutz
-                </Link>
-                <Link href="/terms.html" className="block hover:text-amber-200" data-i18n="menu_terms">
-                  Nutzungsbedingungen
-                </Link>
-                <Link href="/about.html" className="block hover:text-amber-200">
-                  Impressum
-                </Link>
-              </div>
-              <div className="space-y-2">
-                <p className="text-slate-100">Technik</p>
-                <span className="block text-slate-400">Next.js App Router</span>
-                <span className="block text-slate-400">Prisma + Postgres (Docker)</span>
-                <span className="block text-slate-400">shadcn/ui + Tailwind</span>
+              <div className="grid grid-cols-2 gap-3 rounded-2xl border border-slate-800/60 bg-slate-900/70 p-4 text-sm shadow-inner">
+                <div className="space-y-2">
+                  <p className="text-slate-100">Produkt</p>
+                  <Link href="/about.html" className="block hover:text-amber-200" data-i18n="menu_about">
+                    Über DeutschHero
+                  </Link>
+                  <Link href="/contact.html" className="block hover:text-amber-200" data-i18n="menu_contact">
+                    Kontakt
+                  </Link>
+                  <Link href="/" className="block hover:text-amber-200">
+                    Changelog
+                  </Link>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-slate-100">Technik & Recht</p>
+                  <span className="block text-slate-400">Next.js App Router</span>
+                  <span className="block text-slate-400">Prisma + Postgres (Docker)</span>
+                  <span className="block text-slate-400">shadcn/ui + Tailwind</span>
+                  <Link href="/privacy.html" className="block hover:text-amber-200" data-i18n="menu_privacy">
+                    Datenschutz
+                  </Link>
+                  <Link href="/terms.html" className="block hover:text-amber-200" data-i18n="menu_terms">
+                    Nutzungsbedingungen
+                  </Link>
+                </div>
               </div>
             </div>
           </footer>

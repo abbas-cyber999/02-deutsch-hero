@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="تواصل مع فريق Deutsch Hero لاقتراحاتك أو أسئلتك.">
+  <meta name="keywords" content="تواصل, Deutsch Hero, تعلم الألمانية">
+
+  <meta property="og:title" content="Contact – Deutsch Hero">
+  <meta property="og:description" content="تواصل مع فريق Deutsch Hero لأي اقتراح أو ملاحظة.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://deutsch-hero.netlify.app/icon.png">
+  <meta property="og:url" content="https://deutsch-hero.netlify.app">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Deutsch Hero</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="landing-title rainbow-title" data-i18n="title_main"></h1>
+
+  <nav class="main-nav">
+    <a href="index.html"   class="nav-link" data-i18n="menu_home"></a>
+    <a href="about.html"   class="nav-link" data-i18n="menu_about"></a>
+    <a href="contact.html" class="nav-link active" data-i18n="menu_contact"></a>
+    <a href="privacy.html" class="nav-link" data-i18n="menu_privacy"></a>
+    <a href="terms.html"   class="nav-link" data-i18n="menu_terms"></a>
+  </nav>
+
+  <div class="app-shell">
+    <main class="app-main">
+      <section class="card">
+        <h2 class="card-title" data-i18n="contact_title"></h2>
+        <p class="card-subtitle" data-i18n="contact_intro"></p>
+
+        <p data-i18n="contact_email_label"></p>
+
+        <p style="font-weight:600; margin-top:0.5rem;">
+          <span>learn.german.hero@gmail.com</span>
+        </p>
+
+        <p style="font-size:0.9rem; color:#6b7280;" data-i18n="contact_form_hint"></p>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span class="app-footer-text" data-i18n="footer_text"></span>
+    </footer>
+  </div>
+
+  <script src="main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof loadPrefs === 'function') loadPrefs();
+      if (typeof applyUiLanguage === 'function') applyUiLanguage();
+    });
+  </script>
+
+</body>
+</html>

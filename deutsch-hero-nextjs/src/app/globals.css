@@ -98,4 +98,38 @@ a {
   .app-footer a:hover {
     color: #fcd34d !important;
   }
+
+  /* Legacy cards / placement / auth boxes */
+  .card,
+  .view-fade-in,
+  #app > .card {
+    background: linear-gradient(145deg, rgba(15,23,42,0.92), rgba(17,24,39,0.96)) !important;
+    border: 1px solid rgba(148,163,184,0.3) !important;
+    color: #e2e8f0 !important;
+    box-shadow: 0 22px 60px -30px rgba(0,0,0,0.65), 0 0 0 1px rgba(15,23,42,0.7) !important;
+    border-radius: 18px !important;
+  }
+
+  .card-title {
+    color: #f8fafc !important;
+  }
+  .card-subtitle,
+  .scene-body-text,
+  .scene-text,
+  .scene-subtitle {
+    color: #cbd5e1 !important;
+  }
+
+  /* Legacy buttons */
+  .btn.btn-primary {
+    background: linear-gradient(135deg, #facc15, #f59e0b) !important;
+    color: #0f172a !important;
+    border: 1px solid rgba(250, 204, 21, 0.6) !important;
+    box-shadow: 0 14px 40px -18px rgba(250, 204, 21, 0.55) !important;
+  }
+  .btn.btn-ghost {
+    background: rgba(15,23,42,0.75) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(148,163,184,0.35) !important;
+  }
 }

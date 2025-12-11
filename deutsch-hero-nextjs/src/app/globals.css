@@ -45,6 +45,16 @@ a {
 }
 
 @layer components {
+  /* Header + nav overrides to beat legacy style.css */
+  .hero-header {
+    background: linear-gradient(135deg, rgba(15,23,42,0.9), rgba(30,41,59,0.92));
+    border: 1px solid rgba(148,163,184,0.25);
+    box-shadow: 0 25px 60px -25px rgba(0,0,0,0.7), 0 0 0 1px rgba(17,24,39,0.6);
+  }
+  .hero-header .nav-link {
+    color: #e2e8f0 !important;
+  }
+
   /* Override legacy modal buttons so they match the new dark theme */
   .lang-modal .lang-btn {
     background: linear-gradient(145deg, rgba(15,23,42,0.95), rgba(15,23,42,0.9)) !important;
@@ -72,6 +82,20 @@ a {
 
   .lang-modal .lang-btn__code {
     font-weight: 700 !important;
+    color: #fcd34d !important;
+  }
+
+  /* Footer override (legacy style.css forces white) */
+  .app-footer {
+    background: linear-gradient(180deg, rgba(15,23,42,0.9), rgba(9,11,17,0.95)) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(148,163,184,0.25) !important;
+    box-shadow: 0 30px 80px -45px rgba(0,0,0,0.75), 0 0 0 1px rgba(17,24,39,0.6) !important;
+  }
+  .app-footer a {
+    color: #cbd5e1 !important;
+  }
+  .app-footer a:hover {
     color: #fcd34d !important;
   }
 }

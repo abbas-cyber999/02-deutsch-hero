@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 
@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: "Deutsch Hero",
   description: "Sprachlern-App für Deutsch mit mehrsprachiger Oberfläche.",
   manifest: "/manifest.webmanifest",
-  themeColor: "#0f172a",
   openGraph: {
     title: "Deutsch Hero",
     description: "Sprachlern-App für Deutsch mit mehrsprachiger Oberfläche.",
@@ -26,6 +25,10 @@ export const metadata: Metadata = {
     ],
     apple: "/icon/icon-180.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

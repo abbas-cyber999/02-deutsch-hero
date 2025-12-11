@@ -78,43 +78,64 @@ export default function Home() {
           </p>
 
           <div className="lang-modal__buttons mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
-            <button className="lang-btn" data-lang="uk">
+            <button
+              className="lang-btn group flex items-center justify-between rounded-xl border border-amber-300/30 bg-slate-900/80 p-3 text-left text-slate-100 shadow-lg shadow-black/30 ring-1 ring-transparent transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:shadow-glow hover:ring-amber-200/30"
+              data-lang="uk"
+            >
               <span className="lang-btn__flag">🇺🇦</span>
               <span className="lang-btn__label">Українська</span>
               <span className="lang-btn__code">UA</span>
             </button>
 
-            <button className="lang-btn" data-lang="en">
+            <button
+              className="lang-btn group flex items-center justify-between rounded-xl border border-amber-300/30 bg-slate-900/80 p-3 text-left text-slate-100 shadow-lg shadow-black/30 ring-1 ring-transparent transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:shadow-glow hover:ring-amber-200/30"
+              data-lang="en"
+            >
               <span className="lang-btn__flag">🇬🇧</span>
               <span className="lang-btn__label">English</span>
               <span className="lang-btn__code">GB</span>
             </button>
 
-            <button className="lang-btn" data-lang="ar">
+            <button
+              className="lang-btn group flex items-center justify-between rounded-xl border border-amber-300/30 bg-slate-900/80 p-3 text-left text-slate-100 shadow-lg shadow-black/30 ring-1 ring-transparent transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:shadow-glow hover:ring-amber-200/30"
+              data-lang="ar"
+            >
               <span className="lang-btn__flag">🇸🇦</span>
               <span className="lang-btn__label">العربية</span>
               <span className="lang-btn__code">AR</span>
             </button>
 
-            <button className="lang-btn" data-lang="tr">
+            <button
+              className="lang-btn group flex items-center justify-between rounded-xl border border-amber-300/30 bg-slate-900/80 p-3 text-left text-slate-100 shadow-lg shadow-black/30 ring-1 ring-transparent transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:shadow-glow hover:ring-amber-200/30"
+              data-lang="tr"
+            >
               <span className="lang-btn__flag">🇹🇷</span>
               <span className="lang-btn__label">Türkçe</span>
               <span className="lang-btn__code">TR</span>
             </button>
 
-            <button className="lang-btn" data-lang="fa">
+            <button
+              className="lang-btn group flex items-center justify-between rounded-xl border border-amber-300/30 bg-slate-900/80 p-3 text-left text-slate-100 shadow-lg shadow-black/30 ring-1 ring-transparent transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:shadow-glow hover:ring-amber-200/30"
+              data-lang="fa"
+            >
               <span className="lang-btn__flag">🇮🇷</span>
               <span className="lang-btn__label">فارسی</span>
               <span className="lang-btn__code">IR</span>
             </button>
 
-            <button className="lang-btn" data-lang="ru">
+            <button
+              className="lang-btn group flex items-center justify-between rounded-xl border border-amber-300/30 bg-slate-900/80 p-3 text-left text-slate-100 shadow-lg shadow-black/30 ring-1 ring-transparent transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:shadow-glow hover:ring-amber-200/30"
+              data-lang="ru"
+            >
               <span className="lang-btn__flag">🇷🇺</span>
               <span className="lang-btn__label">Русский</span>
               <span className="lang-btn__code">RU</span>
             </button>
 
-            <button className="lang-btn" data-lang="af">
+            <button
+              className="lang-btn group flex items-center justify-between rounded-xl border border-amber-300/30 bg-slate-900/80 p-3 text-left text-slate-100 shadow-lg shadow-black/30 ring-1 ring-transparent transition hover:-translate-y-0.5 hover:border-amber-300/50 hover:shadow-glow hover:ring-amber-200/30"
+              data-lang="af"
+            >
               <span className="lang-btn__flag">🇦🇫</span>
               <span className="lang-btn__label">افغانية</span>
               <span className="lang-btn__code">AF</span>
@@ -126,20 +147,18 @@ export default function Home() {
       <div className="relative overflow-hidden bg-slate-950 text-slate-50">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(250,204,21,0.15),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(59,130,246,0.12),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(15,23,42,0.9),transparent_45%)]" />
         <div className="container relative z-10 space-y-10 pb-16 pt-10 lg:pt-12">
-          <header className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <header className="flex flex-col gap-5 rounded-3xl border border-slate-800/60 bg-slate-900/70 p-4 shadow-lg shadow-black/30 ring-1 ring-amber-200/10 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-amber-300/30 bg-amber-400/10 text-lg font-semibold text-amber-100 shadow-glow">
                 DH
               </div>
               <div>
-                <p className="text-sm text-slate-300">DeutschHero</p>
-                <p className="text-xs text-slate-400">
-                  Schnelles Lernen mit smarter Gamification.
-                </p>
+                <p className="text-sm text-slate-200">DeutschHero</p>
+                <p className="text-xs text-slate-400">Jetzt mit frischer UI und schnellem Onboarding.</p>
               </div>
             </div>
 
-            <nav className="main-nav hidden items-center gap-2 rounded-full bg-slate-900/50 px-2 py-1 shadow-lg shadow-black/20 ring-1 ring-slate-800/60 md:flex">
+            <nav className="main-nav hidden items-center gap-2 rounded-full bg-slate-900/70 px-2 py-1 shadow-xl shadow-black/30 ring-1 ring-slate-800/70 md:flex">
               <Link
                 href="/"
                 className="nav-link rounded-full px-3 py-2 text-sm text-slate-200 hover:bg-slate-800/80 data-[active=true]:bg-slate-800/90"
@@ -356,7 +375,7 @@ export default function Home() {
             {highlights.map((item) => (
               <Card
                 key={item.title}
-                className="glass-panel border-slate-800/70 bg-slate-900/70 transition hover:border-amber-200/30 hover:shadow-glow"
+                className="glass-panel border-slate-800/70 bg-slate-900/70 transition hover:-translate-y-0.5 hover:border-amber-200/30 hover:shadow-glow"
               >
                 <CardHeader className="flex flex-row items-start gap-3">
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-400/10 text-amber-200">
@@ -373,14 +392,58 @@ export default function Home() {
             ))}
           </section>
 
-          <footer className="app-footer mt-8 flex flex-col gap-4 rounded-2xl border border-slate-800/70 bg-slate-900/70 p-6 text-slate-300 shadow-lg shadow-black/20">
-            <span className="app-footer-text text-sm" data-i18n="footer_text">
-              Alle Inhalte funktionieren weiterhin offline; deine Daten bleiben synchronisiert, sobald du online bist.
-            </span>
+          <footer className="app-footer mt-10 grid gap-6 rounded-3xl border border-slate-800/70 bg-slate-900/80 p-8 text-slate-200 shadow-2xl shadow-black/30">
+            <div className="flex flex-col gap-2">
+              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-100 ring-1 ring-amber-200/30">
+                <Sparkles className="h-3.5 w-3.5" />
+                Crafted for fast onboarding
+              </div>
+              <h3 className="text-2xl font-semibold text-slate-50">Bereit für deinen nächsten Level?</h3>
+              <p className="max-w-2xl text-slate-300">
+                Alle Inhalte bleiben offlinefähig, Fortschritt wird lokal und in Postgres gesichert. Wechsel jederzeit die Sprache oder starte neu.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Button size="lg" className="shadow-glow" asChild>
+                  <Link href="#app">Lektion öffnen</Link>
+                </Button>
+                <Button id="reset-app-btn" className="reset-app-btn" type="button" variant="outline" data-i18n="reset_app_btn">
+                  App zurücksetzen
+                </Button>
+              </div>
+            </div>
 
-            <Button id="reset-app-btn" className="reset-app-btn w-fit" type="button" variant="outline" data-i18n="reset_app_btn">
-              App zurücksetzen
-            </Button>
+            <div className="grid gap-4 text-sm text-slate-300 sm:grid-cols-3">
+              <div className="space-y-2">
+                <p className="text-slate-100">Produkt</p>
+                <Link href="/about.html" className="block hover:text-amber-200" data-i18n="menu_about">
+                  Über DeutschHero
+                </Link>
+                <Link href="/contact.html" className="block hover:text-amber-200" data-i18n="menu_contact">
+                  Kontakt
+                </Link>
+                <Link href="/" className="block hover:text-amber-200">
+                  Changelog
+                </Link>
+              </div>
+              <div className="space-y-2">
+                <p className="text-slate-100">Rechtliches</p>
+                <Link href="/privacy.html" className="block hover:text-amber-200" data-i18n="menu_privacy">
+                  Datenschutz
+                </Link>
+                <Link href="/terms.html" className="block hover:text-amber-200" data-i18n="menu_terms">
+                  Nutzungsbedingungen
+                </Link>
+                <Link href="/about.html" className="block hover:text-amber-200">
+                  Impressum
+                </Link>
+              </div>
+              <div className="space-y-2">
+                <p className="text-slate-100">Technik</p>
+                <span className="block text-slate-400">Next.js App Router</span>
+                <span className="block text-slate-400">Prisma + Postgres (Docker)</span>
+                <span className="block text-slate-400">shadcn/ui + Tailwind</span>
+              </div>
+            </div>
           </footer>
         </div>
       </div>

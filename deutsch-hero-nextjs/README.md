@@ -14,7 +14,8 @@ Then open http://localhost:3000. The root route renders the legacy DOM structure
 ### Prisma & Postgres
 
 1. Copy `.env.example` to `.env` and set `DATABASE_URL`.
-2. Create tables: `npx prisma migrate dev` (or introspect with `npx prisma db pull`).
+2. (Optional but recommended) Start the bundled Postgres with Docker: `npm run db:up` (requires Docker Desktop). This spins up Postgres on `localhost:5432` with creds from `.env.example`.
+3. Create tables: `npx prisma migrate dev` (or introspect with `npx prisma db pull`).
 3. Regenerate the client after schema changes: `npx prisma generate`.
 
 A health probe is available at `/api/health` (runs a lightweight Prisma query).

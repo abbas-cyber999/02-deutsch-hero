@@ -6,7 +6,8 @@ This app wraps the existing Deutsch Hero experience in a Next.js (App Router) pr
 
 ```bash
 npm install
-npm run dev
+npm run dev          # start only Next.js
+npm run dev:stack    # start Postgres via Docker, push schema, then Next.js
 ```
 
 Then open http://localhost:3000. The root route renders the legacy DOM structure, and `public/main.js` continues to drive all interactions.
@@ -19,6 +20,12 @@ Then open http://localhost:3000. The root route renders the legacy DOM structure
 3. Regenerate the client after schema changes: `npx prisma generate`.
 
 A health probe is available at `/api/health` (runs a lightweight Prisma query).
+
+### UI / Styling
+
+- Tailwind + shadcn/ui power the refreshed landing shell; legacy lesson rendering still comes from `public/main.js`.
+- Base styles live in `src/app/globals.css`; reusable primitives in `src/components/ui`.
+- We use the Prisma Postgres adapter (`@prisma/adapter-pg`) to talk to the DB.
 
 ### Notes
 

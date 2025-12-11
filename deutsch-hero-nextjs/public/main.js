@@ -4002,6 +4002,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+showLanguageModalIfNeeded();
+
 document.addEventListener("click", function (e) {
   if (e.target.id === "share-lesson-btn") {
     const url = window.location.href;
